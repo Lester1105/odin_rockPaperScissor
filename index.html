@@ -4,20 +4,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="index.css">
-    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
     <title>Rock Paper Scissor</title>
 </head>
 <body>
-    <h1>Rock Paper Scissor</h1>
-    <div class="container">
-        <div id="notification"></div>
-        <div id="playerSelected"></div>
-        <div id="computerSelected"></div>
    
-        <button id="choiceBtns">Rock</button>
-        <button id="choiceBtns">Paper</button>
-        <button id="choiceBtns">Scissor</button>
+    <div class="container">
+        <h1>Rock Paper Scissor</h1>
+        <div id="notification">Try your luck!!</div>
+        <div class="mainCard">
+            <div class="card">
+                <div class="playerScore score"></div>
+                <div class="select" id="playerSelected"></div>
+            </div>
+            <div class="card">
+                <div class="computerScore score"></div>
+                <div class="select" id="computerSelected"></div>
+            </div>
+        </div>
+        <span class="instruction">Choose one!</span>
+    <div class="choices">
+        <button class="choiceBtns">✊</button>
+        <button class="choiceBtns">🖐</button>
+        <button class="choiceBtns">✌️</button>
     </div>
+    
+    <div class="reset" onclick="reset()">reset score</div>
+</div>
     <script src="index.js"></script>
 </body>
 </html>
